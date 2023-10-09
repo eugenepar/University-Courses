@@ -1,8 +1,12 @@
+package humans;
+
+import humans.People;
+
 public class Student extends People {
 
     private int studentTicketId;
 
-    Student(String firstName,String lastName,int studentTicketId){
+    public Student(String firstName,String lastName,int studentTicketId){
         super(firstName,lastName);
         this.studentTicketId = studentTicketId;
     }
@@ -15,7 +19,7 @@ public class Student extends People {
 
     @Override
     public String toString() {
-        return "Student{" +
+        return "humans.Student{" +
                 "firstName='" + getFirstName() + '\'' +
                 ", lastName='" + getLastName() + '\'' +
                 ", studentTicketId=" + studentTicketId +

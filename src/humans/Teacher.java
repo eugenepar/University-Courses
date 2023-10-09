@@ -1,8 +1,12 @@
+package humans;
+
+import humans.People;
+
 public class Teacher extends People {
 
     private String subject;
 
-    Teacher(String firstName,String lastName,String subject){
+    public Teacher(String firstName,String lastName,String subject){
         super(firstName,lastName);
         this.subject = subject;
     }
@@ -13,7 +17,7 @@ public class Teacher extends People {
 
     @Override
     public String toString() {
-        return "Teacher{" +
+        return "humans.Teacher{" +
                 "firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
                 ", subject='" + subject + '\'' +

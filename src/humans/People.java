@@ -1,3 +1,5 @@
+package humans;
+
 public class People {
     protected String firstName;
     protected String lastName;
