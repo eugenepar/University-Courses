@@ -17,6 +17,8 @@ public class Student extends People {
         return this.studentTicketId;
     }
 
+
+
     @Override
     public String toString() {
         return "humans.Student{" +
