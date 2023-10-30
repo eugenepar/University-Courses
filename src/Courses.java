@@ -8,11 +8,23 @@ public class Courses {
     private Teacher teacher;
     private ArrayList<Student> listOfStudents = new ArrayList<>();
 
-    Courses(String courseName,Teacher teacher){
+    private int maxNumberOfStudents;
+
+    Courses(String courseName,Teacher teacher,int maxNumberOfStudents){
         this.courseName = courseName;
         this.teacher = teacher;
+        this.maxNumberOfStudents = maxNumberOfStudents;
+    }
+    Courses(String courseName,Teacher teacher) {
+        this.courseName = courseName;
+        this.teacher = teacher;
+        this.maxNumberOfStudents = 5;
 
     }
+    public Integer getMaxNumberOfStudents(){
+        return this.maxNumberOfStudents;
+    }
+
     public String getCourseName() {
         return courseName;
     }
@@ -34,8 +46,14 @@ public class Courses {
                 '}';
     }
 
-    public void addStudent(Student student){
-        listOfStudents.add(student);
+    public void addStudent(Student student) {
+        if (listOfStudents.size() < maxNumberOfStudents) {
+            listOfStudents.add(student);
+            System.out.println(student.getFirstName() + " has successfully been added to the course!");
+        }
+        else {
+            System.out.println("The course "+ courseName  + " is full. Good luck next year!");
+        }
     }
     public Boolean removeStudent(Student student) {
         return listOfStudents.remove(student);
