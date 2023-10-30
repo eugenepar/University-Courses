@@ -2,7 +2,7 @@ import humans.Student;
 import humans.Teacher;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         Student student = new Student("Jack","Sparrow",1);
         Student student1 = new Student("Tom","Hanks",2);
         Student student2 = new Student("Tim","Stevens",3);

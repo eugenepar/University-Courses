@@ -6,9 +6,10 @@ public class Student extends People {
 
     private int studentTicketId;
 
-    public Student(String firstName,String lastName,int studentTicketId){
+    public Student(String firstName,String lastName,int studentTicketId) throws Exception {
         super(firstName,lastName);
         this.studentTicketId = studentTicketId;
+
     }
 
 
