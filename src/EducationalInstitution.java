@@ -10,6 +10,7 @@ public class EducationalInstitution {
     public void addStudent(Student student) {
         if(canAddStudentToList(student.getStudentTicketId())){
             listOfStudents.add(student);
+            System.out.println(student.getFirstName() + " has been added");
         }
         else {
             System.out.println("We can't add this student to our Institution because this ID already exists: " + student.getStudentTicketId());
