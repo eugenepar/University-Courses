@@ -89,4 +89,8 @@ public class EducationalInstitution {
         return listOfStudents;
     }
 
+    public ArrayList<Courses> getTheFullListOfCourse(){
+        return listOfCourses;
+    }
+
 }
